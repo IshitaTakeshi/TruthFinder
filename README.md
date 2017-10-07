@@ -38,7 +38,7 @@ dataframe = pd.DataFrame([
 
 Before estimating, we have to define the `implication` between facts, which is explained later.  
 
-```
+```python
 vectorizer = TfidfVectorizer(min_df=1)
 vectorizer.fit(dataframe["fact"])
 
@@ -55,7 +55,7 @@ def implication(f1, f2):
 
 Then we can estimate the trustworthiness of these information.  
 
-```
+```python
 finder = TruthFinder(implication, dampening_factor=0.8, influence_related=0.6)
 ```
 

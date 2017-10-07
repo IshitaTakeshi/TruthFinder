@@ -88,11 +88,23 @@ class TruthFinder(object):
         df = self.update_website_trustworthiness(df)
         return df
 
-    def train(self, dataframe, n_iterations, initial_trustworthiness):
+    def stop_condition(self, t1, t2, threshold):
+        return norm(t2-t1) < threshold
+
+    def train(self, dataframe, max_iterations=200,
+              threshold=1e-6, initial_trustworthiness=0.9):
         dataframe["trustworthiness"] =\
                 np.ones(len(dataframe.index)) * initial_trustworthiness
         dataframe["fact_confidence"] = np.zeros(len(dataframe.index))
 
-        for i in range(n_iterations):
-            self.iteration(dataframe)
+        for i in range(max_iterations):
+            t1 = dataframe.drop_duplicates("website")["trustworthiness"]
+
+            dataframe = self.iteration(dataframe)
+
+            t2 = dataframe.drop_duplicates("website")["trustworthiness"]
+
+            if self.stop_condition(t1, t2, threshold):
+                return dataframe
+
         return dataframe
