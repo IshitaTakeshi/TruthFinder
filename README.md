@@ -1,4 +1,4 @@
-# Truth discovery
+# TRUTHFINDER
 
 This is an implementation of [TRUTHFINDER](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.130.6108&rep=rep1&type=pdf) which is a model for finding true facts from a large amount of conflicting information.  
 
@@ -7,7 +7,7 @@ TRUTHFINDER can estimate:
 * Trustworthiness of information providers (e.g. websites)
 * Confidence of information which are claimed as facts by websites.  
 
-## Usage
+# Usage
 As an example, consider that list of theorems and the names of the dircoverers are provided by some websites and we estimate the trustworthiness both of the websites and the provided information.  
 
 | website (information provider) | fact (discoverer) |      object (theorem) |
