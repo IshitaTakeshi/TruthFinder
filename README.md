@@ -5,10 +5,10 @@ This is an implementation of [TRUTHFINDER](http://citeseerx.ist.psu.edu/viewdoc/
 TRUTHFINDER can estimate:
 
 * Trustworthiness of information providers (e.g. websites)
-* Confidence of information which are claimed as facts by websites.  
+* Confidence of information which are claimed as facts by these information providers.
 
 # Usage
-As an example, consider that list of theorems and the names of the dircoverers are provided by some websites and we estimate the trustworthiness both of the websites and the provided information.  
+As an example, consider that list of theorems and the names of the dircoverers are provided by multiple websites and we estimate the trustworthiness both of the websites and the provided information.  
 
 | website (information provider) | fact (discoverer) |      object (theorem) |
 |:-------------------------------|:------------------|:----------------------|
