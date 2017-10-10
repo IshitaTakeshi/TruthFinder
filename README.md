@@ -71,7 +71,7 @@ __result__
 | c       |        0.754878 |          Galilei | Universal gravitation | 0.754878        |
 | c       |        0.754878 |         Einstein |         Heliocentrism | 0.754878        |
 
-As we can see, website `c` and fact provided by it is less reliable than others.  
+As we can see in the table, website `c` and fact provided by it is less reliable than others.  
 
 # Method
 Suppose that some websites provide information on some objects.  
