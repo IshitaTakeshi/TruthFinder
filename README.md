@@ -1,6 +1,6 @@
 # TRUTHFINDER
 
-This is an implementation of [TRUTHFINDER](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.130.6108&rep=rep1&type=pdf) which is a model for finding true facts from a large amount of conflicting information.  
+This is an implementation of TRUTHFINDER: Truth discovery with multiple conflicting information providers on the web, which is a model for finding true facts from a large amount of conflicting information.  
 
 TRUTHFINDER can estimate:
 
@@ -112,3 +112,6 @@ Suppose the case that three websites are providing information on three objects 
 While in majority voting the websites that provide information on a object are equally evaluated whether reliable or not, TRUTHFINDER evaluates information based on the trustworthiness of the websites.  
 
 For example, because majority voting evaluates the facts about the object `Universal gravitation` by the number of websites supporting each fact, it cannnot determine which fact is true `Newton` or `Galilei`. But TRUTHFINDER can evaluate facts based on the trustworthiness of the websites providing them. In the table above we can see that obviously website C provides incorrect information. Because of the mechanism of TRUTHFINDER, it can be determined that the facts provided by website `c` is less reliable.  
+
+# Reference
+Yin, Xiaoxin, Jiawei Han, and S. Yu Philip. "Truth discovery with multiple conflicting information providers on the web." IEEE Transactions on Knowledge and Data Engineering 20.6 (2008): 796-808.
